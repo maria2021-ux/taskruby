@@ -56,3 +56,52 @@ puts "Popped values (FILO):"
 while (popped = stack.pop)
   puts popped
 end
+
+If you're referring to where to add the max value in the README.md, it should be mentioned in the "Example Usage" section, under the output example for clarity. Here's how you can structure it:
+
+Example Usage (Updated with max value)
+In the "Example Usage" section, you already have an example where the max and mean values are printed. The max value is the maximum number from the stack, which you calculate using the max method.
+
+Here’s an updated version of the "Example Usage" and "Output Example" sections:
+
+ruby
+Copy code
+stack = Extras.new
+
+# Push numbers to the stack
+stack.push(20)
+stack.push(400)
+stack.push(80)
+stack.push(330)
+stack.push(2000)
+stack.push(900)
+stack.push(650)
+stack.push(50)
+stack.push(2)
+
+# Get the maximum value
+puts "Max value: #{stack.max}"   # Output: Max value: 2000
+
+# Get the mean value
+puts "Mean value: #{stack.mean}"  # Output: Mean value: 491.33
+
+# Pop values from the stack (FILO)
+puts "Popped values (FILO):"
+while (popped = stack.pop)
+  puts popped
+end
+Output Example
+yaml
+Copy code
+Max value: 2000
+Mean value: 491.33
+Popped values (FILO):
+2
+50
+650
+900
+2000
+330
+80
+400
+20
