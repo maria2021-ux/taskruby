@@ -90,9 +90,7 @@ puts "Popped values (FILO):"
 while (popped = stack.pop)
   puts popped
 end
-Output Example
-yaml
-Copy code
+ # Output Example
 Max value: 2000
 Mean value: 491.33
 Popped values (FILO):
