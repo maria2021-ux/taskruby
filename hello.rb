@@ -68,3 +68,10 @@ puts "Popped values (FILO):"
 while (popped = stack.pop)
   puts popped
 end
+# Answer to the question 
+puts "\nProve why your solution is considered fast(er)?:"
+puts "The solution is optimized by using an auxiliary stack for the `max` method, ensuring constant-time retrieval (O(1)) of the maximum value, even with a large number of elements."
+puts "The `mean` method runs in constant-time (O(1)) by maintaining a running sum, avoiding the need to traverse the entire stack."
+puts "Both the `push` and `pop` operations are performed in constant time (O(1)), ensuring fast performance regardless of stack size."
+puts "These optimizations make the solution highly efficient, even for stacks with millions of elements, handling frequent `max` and `mean` calls with ease."
+puts "Overall, the approach minimizes time complexity and provides a scalable solution for large-scale data processing."
